@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-black font-bold px-6 py-3 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-gradient-to-r from-brandBlue-500 to-brandBlue-600 hover:from-brandBlue-600 hover:to-brandBlue-700 text-white font-bold px-6 py-3 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-gold-500 text-gold-600 hover:bg-gold-500 hover:text-black font-bold px-6 py-3 rounded-lg transition-all duration-200;
+  }
+  
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+  
+  .brand-gradient {
+    @apply bg-gradient-to-r from-gold-400 via-brandBlue-500 to-brandBlue-600;
+  }
+  
+  .badge-circle {
+    @apply relative rounded-full border-4 border-transparent bg-gradient-to-r from-brandBlue-400 to-brandBlue-600 p-1;
+  }
+  
+  .badge-inner {
+    @apply bg-brand-black rounded-full p-6 text-center;
+  }
+  
+  .logo-script {
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .logo-spotlight {
+    font-family: 'Cinzel', serif;
+    background: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #daa520);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    letter-spacing: 0.15em;
+  }
+  
+  .logo-groomers {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+  }
+}
